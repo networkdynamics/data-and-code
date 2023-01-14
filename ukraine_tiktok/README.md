@@ -2,6 +2,8 @@
 
 This is a dataset of videos and comments related to the invasion of Ukraine, published on TikTok by a number of users over the year of 2022. It was compiled by Benjamin Steel, Sara Parker and Derek Ruths at the Network Dynamics Lab, McGill University. We created this dataset to facilitate the study of TikTok, and the nature of social interaction on the platform relevant to a major political event.
 
+The dataset has been released here on Zenodo: [https://doi.org/10.5281/zenodo.7534952](https://doi.org/10.5281/zenodo.7534952) as well as on Github: [https://github.com/networkdynamics/data-and-code/tree/master/ukraine_tiktok](https://github.com/networkdynamics/data-and-code/tree/master/ukraine_tiktok)
+
 To create the dataset, we identified hashtags and keywords explicitly related to the conflict to collect a core set of videos (or ”TikToks”). We then compiled comments associated with these videos. All of the data captured is publically available information, and contains personally identifiable information. In total we collected approximately 16 thousand videos and 12 million comments, from approximately 6 million users. There are approximately 1.9 comments on average per user captured, and 1.5 videos per user who posted a video. The author personally collected this data using the web scraping PyTok library, developed by the author: [https://github.com/networkdynamics/pytok](https://github.com/networkdynamics/pytok). 
 
 Due to scraping duration, this is just a sample of the publically available discourse concerning the invasion of Ukraine on TikTok. Due to the fuzzy search functionality of the TikTok, the dataset contains videos with a range of relatedness to the invasion.
