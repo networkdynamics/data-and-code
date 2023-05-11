@@ -1,6 +1,6 @@
 import os
 
-import pytok
+from pytok import utils
 
 def main():
     this_dir_path = os.path.dirname(os.path.abspath(__file__))
@@ -25,9 +25,11 @@ def main():
 
     comment_cache_path = os.path.join(cache_dir_path, 'comments.csv')
     video_cache_path = os.path.join(cache_dir_path, 'videos.csv')
+    user_cache_path = os.path.join(cache_dir_path, 'users.csv')
 
-    comment_df = pytok.utils.get_comment_df(comment_data_paths, comment_cache_path)
-    video_df = pytok.utils.get_video_df(video_data_paths, video_cache_path)
+    comment_df = utils.get_comment_df(comment_cache_path, file_paths=comment_data_paths)
+    video_df = utils.get_video_df(video_cache_path, file_paths=video_data_paths)
+    user_df = utils.get_user_df(user_cache_path, file_paths=video_data_paths + comment_data_paths)
 
     # Do some analysis!
 
